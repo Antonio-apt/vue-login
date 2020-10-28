@@ -41,7 +41,7 @@ export default {
             background-color: #2e8a76;
             transform: skew(-10deg);
         }
-        &:hover.login-button::before{
+        &:hover.button::before{
             width: 150%;
         }
         .button-text{
