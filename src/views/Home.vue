@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <main-container>
+    Bem vindo {{email}}!
+  </main-container>
 </template>
 
 <script>
+import mainContainer from '@/components/MainContainer.vue';
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    mainContainer,
+  },
+  data() {
+    return {
+      email: this.$parent.mock.username,
+    };
   },
 };
 </script>
